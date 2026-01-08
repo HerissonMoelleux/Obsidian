@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "d55165c614402c65",
+    "type": "split",
+    "children": [
+      {
+        "id": "334be9f8f7205d3b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "be320efcbafa7d96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-Library/01-Frontend/02-JavaScript/Core/Operators.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Operators"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a19db88bd2441226",
+    "type": "split",
+    "children": [
+      {
+        "id": "d3e2903244b0432b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "972ebed01096bd2d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "ac827b41fc329473",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "b0b9362fdf9d6393",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 301.5
+  },
+  "right": {
+    "id": "5873eabc504b4cca",
+    "type": "split",
+    "children": [
+      {
+        "id": "b5298c1a2aabce17",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6aa5ce6f4c2ed2ef",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки"
+            }
+          },
+          {
+            "id": "39e82a35498aefed",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки"
+            }
+          },
+          {
+            "id": "39ea6a631d2c4421",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "6a87936f63f1c078",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          },
+          {
+            "id": "fbef35b4f346e09a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false,
+      "obsidian-excalidraw-plugin:Создать новый чертеж": false
+    }
+  },
+  "active": "be320efcbafa7d96",
+  "lastOpenFiles": [
+    "02-Library/01-Frontend/02-JavaScript/Core/Types.md",
+    "02-Library/01-Frontend/02-JavaScript/Core/Coercion.md",
+    "02-Library/01-Frontend/02-JavaScript/Core/Control Flow.md",
+    "02-Library/01-Frontend/02-JavaScript/Core/Operators.md",
+    "02-Library/01-Frontend/02-JavaScript/Core/Variables.md",
+    "02-Library/01-Frontend/02-JavaScript/_JavaScript Map.md",
+    "02-Library/01-Frontend/02-JavaScript/Variables.md",
+    "02-Library/01-Frontend/02-JavaScript/Core/JS Types.md",
+    "02-Library/01-Frontend/_Frontend Development Map.md",
+    "01-Project/Fetch-App.md",
+    "01-Project/Wineter Intensive/_Intensive.md",
+    "03-Resources/Fetch-App Screen.png",
+    "01-Project/Wineter Intensive/1st day.md",
+    "00-Inbox/JavaScript Fundamentals.md",
+    "02-Library/In the Future/05-Other/02-AI",
+    "02-Library/In the Future/05-Other/AI",
+    "02-Library/In the Future/05-Other/01-Data Science",
+    "02-Library/In the Future/05-Other",
+    "02-Library/In the Future/04-Security",
+    "02-Library/In the Future/04-AI",
+    "02-Library/In the Future/03-DevOps",
+    "02-Library/In the Future",
+    "02-Library/In the Future/02-Backend",
+    "01-Project/Wineter Intensive/2nd day.md",
+    "01-Project/Wineter Intensive",
+    "02-Library/01-Frontend/08-Security/_Security Map.md",
+    "02-Library/01-Frontend/07-Tooling/_Tooling Map.md",
+    "02-Library/01-Frontend/06-Testing/_Testing Map.md",
+    "02-Library/01-Frontend/05-Data Fetching/_Data Fetching Map.md",
+    "02-Library/01-Frontend/04-React/_React Map.md",
+    "02-Library/01-Frontend/03-TypeScript/_TypeScript Map.md",
+    "02-Library/01-Frontend/01-Web Concepts/_Web Concepts Map.md",
+    "00—Inbox/Без названия 1.md",
+    "Без названия.md",
+    "02-Library/01-Frontend/03-TypeScript/Без названия.canvas",
+    "Excalidraw/Drawing 2025-12-29 21.41.30.excalidraw.md",
+    "System.md",
+    "Без названия.canvas",
+    "2025-12-29.md"
+  ]
+}
