@@ -81,6 +81,3 @@
 - Почему `typeof null === "object"`?
 - Как проверить, что переменная — массив?
 - Что такое autoboxing?
-
----
-#javascript #core #types

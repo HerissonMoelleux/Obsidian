@@ -262,5 +262,3 @@ y ??= 'default'; // y = ???
 - Как сделать deep copy объекта? (spread не работает)
 - Что такое short-circuit evaluation в optional chaining?
 
----
-#javascript #core #operators #es6

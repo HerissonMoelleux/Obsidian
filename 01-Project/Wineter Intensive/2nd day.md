@@ -1,61 +1,78 @@
-# Day 1: Promises - What I Learned
+# Day 2: Fetch API - What I Learned
 
 ## Core Concepts
 
-- Promise has 3 states: pending, fulfilled, rejected
-- `new Promise((resolve, reject) => {})` creates a promise
-- `.then()` handles success, `.catch()` handles errors
-- Each `.then()` returns a new Promise
+- fetch() returns a Promise
+- response.json() also returns a Promise
+- HTTP methods: GET, POST, PUT, DELETE
+- response.ok checks if status is 200-299
 
 ## Aha Moments
 
-- Executor function - runs immediately, this means that the synchronous function called inside will also be executed synchronously
+- Я столкнулся с ошибкой в коде и узнал о том что браузер всегда требует от нас помечать ассинхроность. И если мы пользуемся await то при вызове должны либо дать тип нашему скрипту `<script type="module" src="./2nd day/fetch.js"></script>` либо использовать конструкцию `(async () => {})();`
+- Удивительно что в url можно с конструкциями: `https://jsonplaceholder.typicode.com/posts?userId=${userId}` находить посты по id пользователя
 
 ## Struggled With
 
-- Я слегка ошибался в работе Event Loop. Задачи не переходят из Macrotask Queue -> Microtask Queue -> Callback Stack. Они сразу же создаются внутри этих очердей.
+- Иногда путался в цепочках Promises
+- Плохо понял как работать с POST/DELETE/PUT/PATCH, а именно плохо замонил что должно лежать в options -> fetch(url, options={...})
 
 ## Code I'm Proud Of
 
 ```javascript
-function riskyOperation(state) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (state) {
-        resolve("Operation succeeded");
-      } else {
-        reject("Operation failed");
-      }
-    }, 10);
+function searchPost(userId) {
+  return fetch(
+    `https://jsonplaceholder.typicode.com/posts?userId=${userId}`
+  ).then((response) => {
+    return response.json();
   });
 }
 
-riskyOperation(true)
-  .then((message) => {
-    console.log(`Step 1: ${message}`);
-    return riskyOperation(true);
+fetch("https://jsonplaceholder.typicode.com/users")
+  .then((response) => response.json())
+  .then((users) => {
+    const promises = users.map((user) => {
+      return searchPost(user.id).then((posts) => {
+        return { name: user.name, length: posts.length, posts: posts };
+      });
+    });
+
+    return Promise.all(promises);
   })
-  .then((message) => {
-    console.log(`Step 2: ${message}`);
-    return riskyOperation(false);
+  .then((results) => {
+    console.log(results);
+    console.log(`Number of users - ${results.length}`);
+    results.forEach((response) => console.log(`${response.name}`));
+    let postsCount = 0;
+    results.forEach((response) => {
+      postsCount += response.length;
+      console.log(
+        `Posts by ${response.name}, number of posts - ${response.length}`
+      );
+      response.posts.forEach((post) => console.log(post.title));
+    });
+    const userMostPosts = results.reduce((prev, current) => {
+      return prev.length > current.length ? prev : current;
+    });
+    console.log("User with most posts:", userMostPosts);
+    console.log(`Total number of posts from all users - ${postsCount}!`);
   })
-  .catch((message) => {
-    console.log(`Step 3: ${message}`);
-    return "Recovered from error";
-    // return riskyOperation(...) <- Or we may continue the chain
-  });
+  .catch((error) => console.error("Ошибка:", error));
 ```
+
+## Common Mistakes I Made
+
+- Forgetting to return response.json()
+- Not checking response.ok
 
 ## Questions for Tomorrow
 
-- Need to repeat `Callback`
-- В целом тема `Promise` легкая в понимании, только нужно больше практики
+- Что такое CORS?
+- Как устроен скелет запроса?
 
 ## English Terms Learned
 
-- Promise - обещание
-- resolve - разрешить/выполнить
-- reject - отклонить
-- pending - в ожидании
-- fulfilled - выполнено
-- executor - исполнитель
+- fetch - получить/извлечь
+- response - ответ
+- endpoint - конечная точка API
+- payload - данные запроса
