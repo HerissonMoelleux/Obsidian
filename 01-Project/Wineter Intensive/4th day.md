@@ -56,7 +56,7 @@ interface User {
 
 ## Questions for Tomorrow
 
-- Узнать больше про ключевые слова `type` и `interface`
+- Узнать больше про составные типы `type` и `interface`
 
 ## English Terms Learned
 

@@ -1,0 +1,2 @@
+- [ ] Adjusting **career track** due to new tech requirements (Redux instead of Zustand)
+- [ ] **TypeScript** - finish watching and take notes on the lecture
